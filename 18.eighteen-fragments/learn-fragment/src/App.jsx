@@ -1,29 +1,17 @@
 //import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Fooditems from "./components/Fooditems";
+import Ermessage from "./components/Ermessage";
+
 import "./App.css";
 
 function App() {
-  /*let fooditems = ["Dal", "Veg", "Fruit", "Saled", "Chapati", "Ghee"];*/
-  let fooditems = [];
-
-  /*if (fooditems.length === 0) {
-    return <h3>I am still hungry.</h3>;
-  }*/
-
-  /*let emptyMessage =
-    fooditems.length === 0 ? <h3>I am still hungry.</h3> : null;*/
-
+  let fooditems = ["Dal", "Veg", "Fruit", "Saled", "Chapati", "Ghee"];
   return (
     <>
       <hi>Healthy Foods</hi>
-      {fooditems.length === 0 && <h3>I am still hungry.</h3>}
-      <ul className="list-group">
-        {fooditems.map((item) => (
-          <li key={item} className="list-group-item">
-            {item}
-          </li>
-        ))}
-      </ul>
+      <Fooditems items={fooditems}></Fooditems>
+      <Ermessage items={fooditems}></Ermessage>
     </>
   );
 }
