@@ -6,10 +6,10 @@ import Ermessage from "./components/Ermessage";
 import "./App.css";
 
 function App() {
-  let fooditems = ["Dal", "Veg", "Fruit", "Saled", "Chapati", "Ghee"];
+  let fooditems = ["Dal", "Veg", "Fruit", "Saled", "Ghee", "Chapati"];
   return (
     <>
-      <hi>Healthy Foods</hi>
+      <hi className="food-heading">Healthy Foods</hi>
       <Fooditems items={fooditems}></Fooditems>
       <Ermessage items={fooditems}></Ermessage>
     </>
