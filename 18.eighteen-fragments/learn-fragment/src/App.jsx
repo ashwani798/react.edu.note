@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Fooditems from "./components/Fooditems";
 import Ermessage from "./components/Ermessage";
 import Container from "./components/container";
+import FoodInput from "./components/FoodInput";
 
 import "./App.css";
 
@@ -13,12 +14,13 @@ function App() {
       <Container>
         <h1 className="food-heading">Healthy Foods</h1>
         <Fooditems items={fooditems}></Fooditems>
+        <FoodInput></FoodInput>
         <Ermessage items={fooditems}></Ermessage>
       </Container>
 
-      <Container>
+      {/* <Container>
         <p>Above is the list of healthy foods are good for healths.</p>
-      </Container>
+      </Container> */}
     </>
   );
 }
