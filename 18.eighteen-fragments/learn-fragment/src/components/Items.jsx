@@ -1,17 +1,14 @@
 import styles from "./item.module.css";
 
-const Items = ({ foodItem }) => {
-  const handleBuyButtonClicked = (event) => {
-    console.log(event);
-    console.log(`${foodItem} being bought`);
-  };
-
+const Items = ({ foodItem, bought, handleBuyButton }) => {
   return (
-    <li className={`${styles["ap-item"]} list-group-item`}>
+    <li
+      className={`${styles["ap-item"]} list-group-item ${bought && `active`}`}
+    >
       <span className={styles["ap-span"]}>{foodItem}</span>
       <button
         className={`${styles.button} btn btn-info`}
-        onClick={(event) => handleBuyButtonClicked(event)}
+        onClick={handleBuyButton}
       >
         Buy
       </button>
