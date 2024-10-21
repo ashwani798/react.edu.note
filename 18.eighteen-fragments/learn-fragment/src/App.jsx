@@ -25,13 +25,8 @@ function App() {
         <h1 className="food-heading">Healthy Foods</h1>
         <Fooditems items={fooditems}></Fooditems>
         <FoodInput handleKeyDown={onKeyDown}></FoodInput>
-
         <Ermessage items={fooditems}></Ermessage>
       </Container>
-
-      {/* <Container>
-        <p>Above is the list of healthy foods are good for healths.</p>
-      </Container> */}
     </>
   );
 }

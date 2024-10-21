@@ -15,5 +15,4 @@ const Items = ({ foodItem, bought, handleBuyButton }) => {
     </li>
   );
 };
-
 export default Items;
