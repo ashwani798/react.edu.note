@@ -1,0 +1,14 @@
+
+
+input {
+  width: 100px;
+}
+
+
+.ap-button {
+  min-width: 50;
+}
+
+.ap-row {
+  margin: 10px 5px;
+}
