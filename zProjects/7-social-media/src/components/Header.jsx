@@ -26,7 +26,7 @@ const Header = () => {
             </li>
             <li>
               <a href="#" className="nav-link px-2 text-white">
-                Features
+                Feature's
               </a>
             </li>
             <li>
